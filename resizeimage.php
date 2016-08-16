@@ -110,7 +110,8 @@ $this->type = strtolower(substr(strrchr($this->srcimg,"."),1));
         $name         = substr($this->srcimg,0,$name_length-1);
         $this->dstimg = $dstpath;
  
- 
+ //$resizeimage = new resizeimage("图片源文件地址", "200", "100", "0","缩略图地址");
+//就只用上面的一句话,就能生成缩略图,其中,源文件和缩略图地址可以相同,200,100分别代表宽和高
 //echo $this->dstimg;
     }
 }
